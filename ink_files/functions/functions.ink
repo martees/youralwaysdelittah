@@ -167,3 +167,30 @@
             }
     }
     
+// Kazzie special functions
+
+=== function activity_parser (activity)
+    {activity:
+        - dragon_riding: 
+            ~ return "learning dragon riding"
+        - celebrating_birthday:
+            ~ return "celebrating my birthday"
+        - apply_for_shelter:
+            ~ return "applying for a job at Tiny Hoard Cave"
+        - painting:
+            ~ return "painting"
+        - magic_singing:
+            ~ return "practicing magic singing"
+    }
+
+=== function activityListWithCommas(list, if_empty)
+    {LIST_COUNT(list):
+    - 2:
+        	{activity_parser(LIST_MIN(list))} and {activityListWithCommas(list - LIST_MIN(list), if_empty)}
+    - 1:
+        	{activity_parser(list)}
+    - 0:
+			{if_empty}
+    - else:
+      		{activity_parser(LIST_MIN(list))}, {activityListWithCommas(list - LIST_MIN(list), if_empty)}
+    }
