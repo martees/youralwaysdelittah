@@ -1,13 +1,13 @@
-INCLUDE amaziza.ink
-INCLUDE arrow.ink
-INCLUDE kazzie.ink
+INCLUDE amaziza\amaziza.ink
+INCLUDE arrow\arrow.ink
+INCLUDE kazzie\kazzie.ink
 
-INCLUDE amaziza_parser.ink
-INCLUDE kazzie_parser.ink
-INCLUDE arrow_parser.ink
+INCLUDE amaziza\amaziza_parser.ink
+INCLUDE kazzie\kazzie_parser.ink
+INCLUDE arrow\arrow_parser.ink
 
-INCLUDE functions.ink
-INCLUDE variables.ink
+INCLUDE functions\functions.ink
+INCLUDE functions\variables.ink
 
 VAR randomEvent = ()
 
