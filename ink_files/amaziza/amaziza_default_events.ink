@@ -10,15 +10,15 @@
 
 = default_intro_low
 
-{~Come on|Let's go|Be brave} Ziza, {~try to do|I'm sure you can do} at least one more thing before the end of the day!
+{~Come on|Let's go, } Ziza{~|, be brave}, {~try to do|I'm sure you can do} at least one more thing before the end of the day!
 
-Pfff... {No, I can't|Okay stop}, enough, {~I quit|I'm gonna end that here|I'm gonna stop there}. {~Fuck|Too bad for} productivity.
+Pfff... {~No, I can't|Okay stop}, enough, {~I quit|let's {~end that|stop {~pretending|there}}}. {~Fuck|Too bad for} productivity.
 
 ->->
 
 = default_intro_joyful
 
-Today was {~just the perfect day|sooo perfect|the best day ever}, {~I am so happy!|I really love my life!|I love life so much!}
+Today was {~just {~sooo|} perfect|{~literally|} the best day ever}, {~I feel so happy!|everything just feels so great!|I love my life so much!}
 
 [i]She starts to sing {~enthusiastically|with a powerful voice|with the clearest voice}.[/i]
 
@@ -26,9 +26,9 @@ Today was {~just the perfect day|sooo perfect|the best day ever}, {~I am so happ
 
 = default_intro_depressed
 
-Pffff... {~Work, papers, chores, chores, work, papers|There is always something to do|Not even one second to breathe|Too many things to do}, how can {~anybody|anyone} live like this?
+Pffff... {~My to-do-list is always so {~full|busy}}{~, | - work, papers, chores, chores, work, papers - }and {~{~|it's like }I'm always running out of {~time|energy}|not even one second to breathe}... how can {~anybody|anyone} live like this?
 
-{~There is no way I can|I will never} {~stand|keep up like this|keep myself up|maintain the rate} until the holidays...
+{~There's no way I can|I'll never manage to} {~keep this up|keep myself going|maintain this rhythm} until the holidays...
 
 ->->
 
@@ -45,19 +45,18 @@ Pffff... {~Work, papers, chores, chores, work, papers|There is always something 
 = default_low
 
 {cycle:
-    - I'm so {~sick of it|bored}... {~Work, papers, chores, chores, work, papers|There is always something to do|Not even one second to breathe|Too many things to do}, how can {~anybody|anyone} live like this?
+    - Pffff... {~My to-do-list is always so {~full|busy}}{~, | - work, papers, chores, chores, work, papers - }and {~{~|it's like }I'm always running out of {~time|energy}|not even one second to breathe}... how can {~anybody|anyone} live like this?
 
-    What can I do anyway, I have to {~stand|keep up|keep myself up|maintain the rate} until the holidays... 
+        {~There's no way I can|I'll never manage to} {~keep this up|keep myself going|maintain this rhythm} until the holidays...
 
-    - {shuffle:
-        - I hope {~that I'll have a quick answer|they will be reactive} for this year's high school administrative {~stuff|resquests|applications}.
+    - I hope {~I'll have a quick answer for|that it won't be long before we get info about} next year's {~{~Board|Direction|Head} of Education {~Requests|& Social {~Security|Insurance|Welfare|Protection}}} {~stuff|applications}.
 
-        I don't want to wait {~another month|an entire month|for weeks} before {~knowing how I will|I know how to} get {~the June scholar trip|this spring's mathemagical circle of conferences|my second semester classes} organized.
-
-        - I hope at least {~that I'll have a quick answer|they will be reactive} for next year's {~Direction of Education stuff|Board of Education resquests|social security applications|social {~safety|insurance|welfare|protection}} applications.
-
-        I don't want to wait {~another six months|an entire semester|for months} before knowing how {~I'll|to} get my next year's {~classes|timetable} organized.
-    }
+        I don't want to wait for {~yet another month|another full month|weeks} before {~knowing how I will|I know how to} get {~the June scholar trip|this spring's mathemagical circle of conferences|my second semester classes} organized.
+        
+    - I managed to {~learn a new song|cook something tasty|reorganize my files} {~this|yesterday} {~afternoon|morning|evening}, but somehow it didn't feel {~ quite {~|as {~satisfying|good|fulfilling}}} as usual?
+        
+        In these moments {~it's so hard to tell|I don't even know|I can't even tell} {~whether|if} I should {~|try to}{~ take it easy| rest {~|a bit} more} or push myself {~a little harder|out of my comfort zone}{~.|!}
+    
 }
 
 ->->
@@ -65,13 +64,14 @@ Pffff... {~Work, papers, chores, chores, work, papers|There is always something 
 = default_joyful 
 
 {cycle:
-    - {~I sat at the table of a café,|Working peacefully, sat at a café} under the warm heat of the autumn sun. {~Is there anything better in the world?|I found no more enjoyable way to work so far.|Nothing more {~pleasing|pleasant} to {~enjoy|make the most of} the {~weather|season}.}
+    - {~This afternoon I sat to work|I've been working peacefully, sitting} at a café, under the {~warm heat|gentle light} of the autumn sun. {~Is there anything better in the world?|This is definitely the most {~|(and only?)} enjoyable way to work.|Best way of {~enjoying|making the most of} this {~weather|season}.}
 
-    I even {~achieved|finished} {~my first|my last|another} {~pile of corrections|stack of {~tests|homeworks}|stack of {~test|exam|student|} papers|math essay for the {~students|semester}}!
+    I {~went through|finished} {~a full|my last|another} {~set of corrections|stack of {~tests|homeworks}|stack of {~test|exam|student|} papers|exam sheet for {~my students|next week}}!
 
-    - {~It is so nice to feel good!|How I love to feel good!|I feel so alive!}
-
-    I know I have to appreciate it when I'm high, for it can {~switch|change} so {~briefly|quickly|suddenly}.
+    - {~It's so nice to feel good!|Oh how I love to feel good!|I feel so alive!}
+    
+    I need to enjoy this mood, it can {~switch|change} so {~briefly|quickly|suddenly}.
+    
 }
 
 ->->
@@ -103,7 +103,7 @@ Pffff... {~Work, papers, chores, chores, work, papers|There is always something 
 
 = default_low
 
-{~I'm so tired|Today was really  difficult|Today was not easy}. At least {~the house is not obviously messy|my courses for tomorrow are ready|I {~completed|sent} the administrative file for my disability aids}.
+{~I'm so tired|Today was really  difficult|Today was not easy}. At least {~the house is not obviously messy|my lessons for tomorrow are ready|I {~completed|sent} the files for my disability aids}.
 
 Let's just go {~to bed|to sleep}.
 
@@ -111,16 +111,16 @@ Let's just go {~to bed|to sleep}.
 
 = default_joyful
 
-{~Come on|Okay|All right}, tonight I {~offer myself the time|give myself the right} to read a little.
+{~Okay|Alright}, I think I'll {~take|give myself} some {~|extra} reading time tonight.
 
-I don't do it {~often enough|as much as I'd like}, {~I really love this book|where was I already|this book is so great}...
+I don't do it {~so often|as much as I'd like}{~, even though I'm in love with this book.|... where was I already?|, and this book is so great!}
 
 ->->
 
 = default_depressed
 
-I'm so tired{~ of myself| of life|}...
+I'm {~so tired{~ of myself| of life}|exhausted}...
 
-{~Fuck|Forget} everything, I just wanna {~go to sleep|disconnect|run away|fly away}...
+{~Everything feels so wrong{~|, sometimes}|Fuck everything,|I don't even care anymore,} I just wanna {~go to sleep once and for all|disconnect my brain|run away from this|fly away to some better place}...
 
 ->->

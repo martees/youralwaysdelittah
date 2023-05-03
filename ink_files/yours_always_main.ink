@@ -41,5 +41,3 @@ INCLUDE tooltips.ink
 INCLUDE upkeep_and_choices.ink
 
 VAR randomEvent = ()
-
--> DONE
