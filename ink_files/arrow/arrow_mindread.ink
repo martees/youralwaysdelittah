@@ -22,6 +22,9 @@
 
 -> arrow_consequences ->
 
++ [READ MORE]
+- 
+
 -> arrow_intro_switch ->
 
 + [READ MORE]
