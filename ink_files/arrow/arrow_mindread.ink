@@ -1,10 +1,14 @@
 === arrow_mindreads ===
 
-~ temp x = RANDOM(1, 6)
-
-{pickedForALetter == arrow:
-    - -> arrow_consequences ->
+{
+    - pickedForALetter == arrow: -> arrow_letter_mindread
+    - else: -> arrow_short_mindread
 }
+
+
+= arrow_intro_switch
+
+~ temp x = RANDOM(1, 6)
 
 {
     - (arrowNest ? go_hunt) && (arrowWound ? not_wounded) && (x <= 3): -> arrow_intro_events.sprain_ankle_1 ->
@@ -12,10 +16,13 @@
     - else: -> arrowEventStack(intro) ->
 }
 
-+ [READ MORE]
-- 
+->->
 
--> arrowEventStack(normal) ->
+= arrow_letter_mindread
+
+-> arrow_consequences ->
+
+-> arrow_intro_switch ->
 
 + [READ MORE]
 - 
@@ -31,6 +38,16 @@
 - 
 
 -> arrow_nest_events ->
+
+-> DONE
+
+= arrow_short_mindread
+
+{shuffle:
+    - -> arrow_intro_switch ->
+    - -> arrowEventStack(normal) ->
+    - -> arrowEventStack(sleep) ->
+}
 
 -> DONE
 

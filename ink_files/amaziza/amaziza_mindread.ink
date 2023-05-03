@@ -1,5 +1,12 @@
 === amaziza_mindreads ===
 
+{
+    - pickedForALetter == ama_ziza: -> amaziza_letter_mindread
+    - else: -> amaziza_short_mindread
+}
+
+= calculate_moodswings
+
 ~ temp x = RANDOM(1, 2)
 
 {
@@ -17,9 +24,25 @@
         ~ changeStates(amazizaMoodSwings, joyful)
 }
 
-{pickedForALetter == ama_ziza:
-    - -> amaziza_consequences ->
+->->
+
+= amaziza_short_mindread
+
+-> calculate_moodswings ->
+
+{shuffle:
+    - -> amazizaEventStack(intro) ->
+    - -> amazizaEventStack(normal) ->
+    - -> amazizaEventStack(sleep) ->
 }
+
+-> DONE
+
+= amaziza_letter_mindread
+
+-> calculate_moodswings ->
+
+-> amaziza_consequences ->
 
 -> amazizaEventStack(intro) ->
 
@@ -28,11 +51,6 @@
 
 -> amazizaEventStack(normal) ->
 
-
-+ [READ MORE]
-- 
-
--> amazizaEventStack(normal) ->
 
 + [READ MORE]
 - 
