@@ -1,6 +1,7 @@
 === arrow_mindreads ===
 
 {
+    - currentWeek ? week_8: -> arrow_endings
     - pickedForALetter == arrow: -> arrow_letter_mindread
     - else: -> arrow_short_mindread
 }
@@ -105,6 +106,15 @@ Tomorrow, {~we hunt again!|we're back in the forest!|we're hunting again!|we fol
 ->->
 
 === arrow_stay ===
+
+~ arrowStopsHunting++
+
+{arrowWound:
+    - sprain_ankle: -> stay_ankle
+    - resprain_ankle: -> stay_resprain
+    - ankle_recovered: -> stay_recovered
+    - else: -> stay_default
+}
 
 = stay_default
 
