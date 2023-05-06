@@ -45,6 +45,3 @@ VAR randomEvent = ()
 
 ~ kazzie_last_emotags = passion
 ~ kazzie_last_emotags += care
-
-->kazzie_consequences->
-
