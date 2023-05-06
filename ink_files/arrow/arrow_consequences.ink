@@ -24,6 +24,6 @@ I lost myself remembering about how much my {~first hunts|days at school|archery
 
 = consequence_care
 
-{~I started dreaming on what my life would be{~| made of} if I wasn't {~all day out hunting|so obsessed with hunting|constantly scared that I'll hurt myself|always the head in the trees}|I started {~imagining myself|picturing me|seeing myself} {~spending a day in town|visiting an old friend|learning new skills|lying around the house all day long}}. It made me smile {~at all the good things in my life|without realizing it}.
+{~I started {~pondering on|{~wondering|dreaming} about} what my life would be{~| made of} if I wasn't {~all day out hunting|so obsessed with hunting|constantly scared that I'll hurt myself|always the head in the trees}|I started {~imagining myself|picturing me|seeing myself} {~spending a day in town|visiting an old friend|learning new skills|lying around the house all day long}}. It made me smile {~at all the good things in my life|without realizing it}.
 
 -> DONE
