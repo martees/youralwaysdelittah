@@ -16,7 +16,7 @@
 
 = consequence_passion
 
-I got so lost in thinking about dance that I {~almost |}{~forgot to {~eat.|pack my lunch for the next day.|pack my bag.|get the laundry into the dry-o-magic.}|cut myself cooking.|messed up my divination spell.|made a mistake while grading a paper.|etched the wrong formula into the computorb.}
+I got so lost in thinking about dance that I {~almost |}{~forgot to {~eat.|pack my lunch for the next day.|pack my bag.|get the laundry into the dry-o-magic.}|cut myself cooking.|messed up my dividation spell.|made a mistake while grading a paper.|etched the wrong formula into the computorb.}
 
 -> DONE
 
