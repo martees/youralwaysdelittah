@@ -18,12 +18,12 @@ I lost myself remembering about how much my {~first hunts|days at school|archery
 
 = consequence_passion
 
-{~The late birdcalls|The hot colors of the autumn falls|The creaking of branches} filled me with {~the thrill of the hunt|a strong love of nature|}. Oh I'd love to be {a dragon like you, Ace|a {~free|elegant|flying} skynimal|a {~bloodthirsty|running|wild} chimaera}.
+{~The late birdcalls|The hot colors of the autumn falls|The creaking of branches} made me {~relive the thrill of hunting|fall in love with nature again|feel so whole}. Oh I'd love to be {~a dragon like you, Ace|a{~ free|n elegant| flying} skynimal|a {~bloodthirsty|running|wild} chimaera}.
 
 -> DONE
 
 = consequence_care
 
-{~I started pondering on what my life would be{|made of} if I wasn't {all day out hunting|living with Ace|scared about hurting myself|always the head in the trees}.|I started {~imagine myself|picture me|see myself} {~spending a day in town|visiting a friend|learning new skills|lying around the house}}. {~It made me smile|I let out a light laugh} without {~me noticing it|me realizing it}.
+{~I started dreaming on what my life would be{~| made of} if I wasn't {~all day out hunting|so obsessed with hunting|constantly scared that I'll hurt myself|always the head in the trees}|I started {~imagining myself|picturing me|seeing myself} {~spending a day in town|visiting an old friend|learning new skills|lying around the house all day long}}. It made me smile {~at all the good things in my life|without realizing it}.
 
 -> DONE
