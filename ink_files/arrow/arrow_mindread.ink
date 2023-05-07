@@ -2,8 +2,7 @@
 
 {
     - currentWeek ? week_8: -> arrow_endings
-    - pickedForALetter == arrow: -> arrow_letter_mindread
-    - else: -> arrow_short_mindread
+    - else: -> arrow_mindread
 }
 
 
@@ -19,39 +18,27 @@
 
 ->->
 
-= arrow_letter_mindread
+= arrow_mindread
 
--> arrow_consequences ->
-
-+ [READ MORE]
-- 
+{pickedForALetter == arrow: -> arrow_consequences ->}
 
 -> arrow_intro_switch ->
 
 + [READ MORE]
-- 
+-
 
 -> arrowEventStack(normal) ->
 
 + [READ MORE]
-- 
+-
 
 -> arrowEventStack(sleep) ->
 
 + [READ MORE]
-- 
+-
 
 -> arrow_nest_events ->
 
--> DONE
-
-= arrow_short_mindread
-
-{shuffle:
-    - -> arrow_intro_switch ->
-    - -> arrowEventStack(normal) ->
-    - -> arrowEventStack(sleep) ->
-}
 
 -> DONE
 
@@ -86,7 +73,7 @@
 
 {~I miss the smell of the forest.|I can't stay put another minute.|} Ace, nest! {~Get ready!|} 
 
-Tomorrow, {~we hunt{~ again|}!|go hunting!|we're hunting!}
+Tomorrow, {~we hunt{~ again|}!|we'll go hunting!|we're hunting!}
 
 ->->
 
@@ -94,7 +81,7 @@ Tomorrow, {~we hunt{~ again|}!|go hunting!|we're hunting!}
 
 {~Recovered or not, I have to get out{~ of here| in the wild}.|I can't stand staying home another week.} Ace, nest!
 
-Tomorrow, {~we hunt{~ again|}!|we go hunting!|we're hunting!}
+Tomorrow, {~we hunt{~ again|}!|we'll go hunting!|we're hunting!}
 
 ->->
 

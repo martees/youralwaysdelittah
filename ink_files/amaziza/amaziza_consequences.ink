@@ -6,6 +6,9 @@
 {amaziza_last_emotags ? passion: <- consequence_passion}
 {amaziza_last_emotags ? care: <- consequence_care}
 
++ [READ MORE]
+- 
+
 ->->
 
 = consequence_nostalgia

@@ -1,8 +1,8 @@
 === amaziza_mindreads ===
 
 {
-    - pickedForALetter == ama_ziza: -> amaziza_letter_mindread
-    - else: -> amaziza_short_mindread
+    - currentWeek ? week_8: -> amaziza_mindread
+    - else: -> amaziza_mindread
 }
 
 = calculate_moodswings
@@ -26,26 +26,11 @@
 
 ->->
 
-= amaziza_short_mindread
+= amaziza_mindread
 
 -> calculate_moodswings ->
 
-{shuffle:
-    - -> amazizaEventStack(intro) ->
-    - -> amazizaEventStack(normal) ->
-    - -> amazizaEventStack(sleep) ->
-}
-
--> DONE
-
-= amaziza_letter_mindread
-
--> calculate_moodswings ->
-
--> amaziza_consequences ->
-
-+ [READ MORE]
-- 
+{pickedForALetter == ama_ziza: -> amaziza_consequences ->}
 
 -> amazizaEventStack(intro) ->
 
