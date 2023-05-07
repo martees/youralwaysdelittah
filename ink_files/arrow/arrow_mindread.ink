@@ -1,10 +1,15 @@
 === arrow_mindreads ===
 
-~ temp x = RANDOM(1, 6)
-
-{pickedForALetter == arrow:
-    - -> arrow_consequences ->
+{
+    - currentWeek ? week_8: -> arrow_endings
+    - pickedForALetter == arrow: -> arrow_letter_mindread
+    - else: -> arrow_short_mindread
 }
+
+
+= arrow_intro_switch
+
+~ temp x = RANDOM(1, 6)
 
 {
     - (arrowNest ? go_hunt) && (arrowWound ? not_wounded) && (x <= 3): -> arrow_intro_events.sprain_ankle_1 ->
@@ -12,10 +17,16 @@
     - else: -> arrowEventStack(intro) ->
 }
 
+->->
+
+= arrow_letter_mindread
+
+-> arrow_consequences ->
+
 + [READ MORE]
 - 
 
--> arrowEventStack(normal) ->
+-> arrow_intro_switch ->
 
 + [READ MORE]
 - 
@@ -31,6 +42,16 @@
 - 
 
 -> arrow_nest_events ->
+
+-> DONE
+
+= arrow_short_mindread
+
+{shuffle:
+    - -> arrow_intro_switch ->
+    - -> arrowEventStack(normal) ->
+    - -> arrowEventStack(sleep) ->
+}
 
 -> DONE
 
@@ -85,6 +106,15 @@ Tomorrow, {~we hunt again!|we're back in the forest!|we're hunting again!|we fol
 ->->
 
 === arrow_stay ===
+
+~ arrowStopsHunting++
+
+{arrowWound:
+    - sprain_ankle: -> stay_ankle
+    - resprain_ankle: -> stay_resprain
+    - ankle_recovered: -> stay_recovered
+    - else: -> stay_default
+}
 
 = stay_default
 

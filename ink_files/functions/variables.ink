@@ -29,6 +29,8 @@ LIST arrowWound = (not_wounded), sprain_ankle, resprain_ankle, ankle_recovered, 
 LIST arrowNest = (first_day), go_hunt, stay_home
 LIST aceGuide = (ace_not_trained), ace_trained
 
+VAR arrowStopsHunting = 0
+
 // Common state machines
 LIST kazzieBday = (not_bday_yet), bday_tomorrow, bday, bdaycake_eaten_by_ace, bdaycake_not_eaten_by_ace
 LIST kazzieFriend = (not_friend), seen_at_bday, visit_kazzie, kazzie_dragon_trainer

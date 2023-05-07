@@ -1,3 +1,5 @@
+// Text that should be displayed at the start of the week, in the mindreads, the week after arrow has received a letter
+
 === arrow_consequences ===
 
 {~I received a letter|Delittah wrote to me|My friend Delittah wrote me}{~ last week.| again.|!}
@@ -5,9 +7,6 @@
 {arrow_last_emotags ? nostalgia: <- consequence_nostalgia}
 {arrow_last_emotags ? passion: <- consequence_passion}
 {arrow_last_emotags ? care: <- consequence_care}
-
-+ [READ MORE]
-- 
 
 ->->
 

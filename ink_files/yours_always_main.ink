@@ -19,6 +19,7 @@ INCLUDE arrow\arrow_default_events.ink
 INCLUDE arrow\arrow_events.ink
 
 INCLUDE arrow\arrow_letters.ink
+INCLUDE arrow\arrow_endings.ink
 
 // KAZZIE RELATED FILES
 
