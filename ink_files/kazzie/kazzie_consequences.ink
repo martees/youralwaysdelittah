@@ -1,9 +1,9 @@
 === kazzie_consequences ===  
 
-{~I received a letter|Delittah wrote to me|My friend Delittah wrote me}{~ last week.|{~ once |} again.|.} 
+{~I received a letter|Delittah wrote to me|My friend Delittah wrote me}{~ last week.| {~once |}again.|.}
 
 {kazzie_last_emotags ? nostalgia: <- consequence_nostalgia}
-{kazzie_last_emotags ? passion: <- consequence_passion} 
+{kazzie_last_emotags ? passion: <- consequence_passion}
 {kazzie_last_emotags ? care: <- consequence_care}
 
 + [READ MORE]

@@ -31,7 +31,7 @@
 
 I'm feeling complete with Ace by my side. She is all I need, my loyal best friend.
 Maybe if I had more time, I could befriend other people in the future?
-
+ 
 ->->
 
 = health
