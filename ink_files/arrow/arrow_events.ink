@@ -268,7 +268,7 @@ I need at least 4 hours of sleep anyways.
 ->->
 
 = stork_1  //sprain_ankle && thinking_about_stork
-[b] ARROW - [/b] I should go see druid Stork tomorrow about my ankle.
+I should go see druid Stork tomorrow about my ankle.
 I never have time to visit them otherwise...
 
 ~ arrowEventDone += sleepEvents.stork1
