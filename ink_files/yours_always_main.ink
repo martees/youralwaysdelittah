@@ -42,9 +42,3 @@ INCLUDE tooltips.ink
 INCLUDE upkeep_and_choices.ink
 
 VAR randomEvent = ()
-
-~ kazzie_last_emotags = passion
-~ kazzie_last_emotags += care
-
-->kazzie_consequences->
-
