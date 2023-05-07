@@ -41,6 +41,13 @@
 
 === arrow_default_event ===
 
+{&-> default_event_1 ->|-> default_event_2 ->}
+
+->->
+
+= default_event_1
+
+
  {shuffle:
         -  Ace, girl! We have to {~ do a stocktake of our loot.|preserve the meat with salt.|ration our food for the coming weeks.|spruce the cabin up.}
         
@@ -48,6 +55,16 @@
         
         Come on, {~ the work needs to be done.|our work is not over yet.|let's get the job done.}
  }
+
+->->
+
+= default_event_2
+
+ {
+        - (arrowWound ? got_blind): {~In this season|In autumn|At this time of year} I just {~used to love|usd to enjoy|used to spend quality time} watching {the light through the {~yellow|red|orange} leaves|out for the crops when the {~rodants|pests|ruminants} come too close,|the treeshrooms {~grow|glow|sing}} {~by the window|while drinking a hot brew|during Ace's nap}.
+        -  else: {~In this season|In autumn|At this time of year} I just {~love|enjoy|spend quality time} watching {the light through the {~yellow|red|orange} leaves|out for the crops when the {~rodants|pests|ruminants} come too close,|the treeshrooms {~grow|glow|sing}} {~by the window|while drinking a hot brew|during Ace's nap}.
+ }
+ 
 
 ->->
 

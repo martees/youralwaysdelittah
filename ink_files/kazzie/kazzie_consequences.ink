@@ -5,8 +5,7 @@
 {kazzie_last_emotags ? nostalgia: <- consequence_nostalgia}
 {kazzie_last_emotags ? passion: <- consequence_passion} 
 {kazzie_last_emotags ? care: <- consequence_care}  
-+ [READ MORE] 
--  
+
 ->->  
 
 = consequence_nostalgia  
