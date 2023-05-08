@@ -1,0 +1,290 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/background.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/UI/topbar.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/AcespriteFont.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Sprites/UI/bottombar.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/hoverable.gd" type="Script" id=6]
+[ext_resource path="res://Sprites/UI/letterbutton.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/letterbutton_hl.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/mindreadbox.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/town.gd" type="Script" id=10]
+[ext_resource path="res://Sprites/UI/read_more.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/read_more_hl.png" type="Texture" id=12]
+[ext_resource path="res://Fonts/PixelTactical.tres" type="DynamicFont" id=13]
+[ext_resource path="res://Sprites/UI/letterbutton_gr.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/background_night.png" type="Texture" id=15]
+[ext_resource path="res://Scripts/intro.gd" type="Script" id=16]
+[ext_resource path="res://Sprites/background_people.png" type="Texture" id=17]
+[ext_resource path="res://Sounds/clic_read_more.ogg" type="AudioStream" id=18]
+[ext_resource path="res://Sprites/Weeks/week1.png" type="Texture" id=19]
+[ext_resource path="res://Scripts/letter_by_letter.gd" type="Script" id=20]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.631373, 0.588235, 0.486275, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.533333, 0.498039, 0.392157, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 2
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.580392, 0.517647, 0.396078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 1
+border_color = Color( 0.423529, 0.380392, 0.301961, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.529412, 0.482353, 0.368627, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 10
+border_color = Color( 0.780392, 0.690196, 0.592157, 0 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="Theme" id=2]
+VScrollBar/styles/grabber = SubResource( 3 )
+VScrollBar/styles/grabber_highlight = SubResource( 3 )
+VScrollBar/styles/grabber_pressed = SubResource( 4 )
+VScrollBar/styles/scroll = SubResource( 5 )
+VScrollBar/styles/scroll_focus = null
+
+[node name="Town" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 10 )
+Houses = [ NodePath("Houses/Amaziza"), NodePath("Houses/Kazzie"), NodePath("Houses/Arrow") ]
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[node name="MindRead" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="ReadMore" type="Control" parent="MindRead"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+sound = ExtResource( 18 )
+
+[node name="Image" type="TextureRect" parent="MindRead/ReadMore"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageHL" type="TextureRect" parent="MindRead/ReadMore"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="Sound" type="AudioStreamPlayer" parent="MindRead/ReadMore"]
+stream = ExtResource( 18 )
+
+[node name="Title" type="RichTextLabel" parent="MindRead"]
+margin_left = 268.0
+margin_top = 37.0
+margin_right = 413.0
+margin_bottom = 53.0
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+scroll_active = false
+
+[node name="BottomBar" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
+
+[node name="LetterButton" type="Control" parent="BottomBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+enabled = false
+sound = ExtResource( 18 )
+
+[node name="Image" type="TextureRect" parent="BottomBar/LetterButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageHL" type="TextureRect" parent="BottomBar/LetterButton"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageGR" type="TextureRect" parent="BottomBar/LetterButton"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="RichTextLabel" parent="BottomBar"]
+margin_left = 298.0
+margin_top = 252.0
+margin_right = 422.0
+margin_bottom = 268.0
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+scroll_active = false
+
+[node name="TopBar" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="RichTextLabel" parent="TopBar"]
+margin_left = 268.0
+margin_top = 3.0
+margin_right = 426.0
+margin_bottom = 19.0
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Peer into their minds..."
+scroll_active = false
+
+[node name="Portrait" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+stretch_mode = 6
+
+[node name="Houses" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Amaziza" parent="Houses" instance=ExtResource( 1 )]
+visible = false
+
+[node name="TooltipText" type="RichTextLabel" parent="Houses/Amaziza"]
+margin_left = 93.0
+margin_top = 209.0
+margin_right = 254.0
+margin_bottom = 233.0
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_constants/line_separation = -4
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Lorem ipsum dolor sic alid"
+
+[node name="Kazzie" parent="Houses" instance=ExtResource( 1 )]
+visible = false
+id = "kazzie"
+
+[node name="TooltipText" type="RichTextLabel" parent="Houses/Kazzie"]
+margin_left = 247.0
+margin_top = 149.0
+margin_right = 408.0
+margin_bottom = 173.0
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_constants/line_separation = -4
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Lorem ipsum dolor sic alid"
+
+[node name="Arrow" parent="Houses" instance=ExtResource( 1 )]
+visible = false
+margin_left = 1.0
+margin_right = 1.0
+id = "arrow"
+
+[node name="TooltipText" type="RichTextLabel" parent="Houses/Arrow"]
+margin_left = 234.0
+margin_top = 72.0
+margin_right = 395.0
+margin_bottom = 96.0
+mouse_filter = 2
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_constants/line_separation = -4
+custom_fonts/normal_font = ExtResource( 4 )
+text = "Lorem ipsum dolor sic alid"
+
+[node name="MindReadTextBox" type="RichTextLabel" parent="Houses"]
+show_behind_parent = true
+margin_left = 271.0
+margin_top = 71.0
+margin_right = 459.0
+margin_bottom = 227.0
+theme = SubResource( 2 )
+custom_colors/default_color = Color( 0.662745, 0.521569, 0.411765, 1 )
+custom_fonts/italics_font = ExtResource( 13 )
+custom_fonts/bold_font = ExtResource( 13 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+script = ExtResource( 20 )
+
+[node name="Intro" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 16 )
+
+[node name="IntroNight" type="TextureRect" parent="Intro"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 6
+
+[node name="WeekLabel" type="TextureRect" parent="Intro/IntroNight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 19 )
+expand = true
+stretch_mode = 6
+
+[node name="Flavor" type="RichTextLabel" parent="Intro/IntroNight"]
+margin_left = 154.0
+margin_top = 243.0
+margin_right = 461.0
+margin_bottom = 259.0
+custom_colors/default_color = Color( 0.784314, 0.945098, 1, 1 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+scroll_active = false
+
+[node name="IntroDay" type="TextureRect" parent="Intro"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 6
