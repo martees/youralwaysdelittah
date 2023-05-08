@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+path="res://.import/yours_always_main.ink.json-42b1e3ba81e99e4fa5829af3f786f8c6.res"
+
+[deps]
+
+source_file="res://Story/yours_always_main.ink.json"
+dest_files=[ "res://.import/yours_always_main.ink.json-42b1e3ba81e99e4fa5829af3f786f8c6.res" ]
+
+[params]
+
+compress=true

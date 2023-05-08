@@ -1,0 +1,13 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+path="res://.import/functions.ink-4d36854ad151f602e6a079607be2c855.res"
+
+[deps]
+
+source_file="res://Story/functions/functions.ink"
+dest_files=[ "res://.import/functions.ink-4d36854ad151f602e6a079607be2c855.res" ]
+
+[params]
+

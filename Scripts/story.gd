@@ -31,7 +31,7 @@ func _ready():
 
 	# Replace the example path with the path to your story.
 	# Remove this line if you set 'ink_file' in the inspector.
-	_ink_player.ink_file = load("res://Story/Story.ink.json")
+	_ink_player.ink_file = load("res://Story/yours_always_main.ink.json")
 
 	# It's recommended to load the story in the background. On platforms that
 	# don't support threads, the value of this variable is ignored.
