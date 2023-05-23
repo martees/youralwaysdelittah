@@ -1,0 +1,13 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+path="res://.import/kazzie_parser.ink-ad79ec1ae39d40ca43af51b0c541af75.res"
+
+[deps]
+
+source_file="res://Story/kazzie/kazzie_parser.ink"
+dest_files=[ "res://.import/kazzie_parser.ink-ad79ec1ae39d40ca43af51b0c541af75.res" ]
+
+[params]
+

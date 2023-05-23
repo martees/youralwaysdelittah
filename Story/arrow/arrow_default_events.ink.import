@@ -1,0 +1,13 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+path="res://.import/arrow_default_events.ink-9e69db3670a8f6d43194b5ad53d9fcf0.res"
+
+[deps]
+
+source_file="res://Story/arrow/arrow_default_events.ink"
+dest_files=[ "res://.import/arrow_default_events.ink-9e69db3670a8f6d43194b5ad53d9fcf0.res" ]
+
+[params]
+

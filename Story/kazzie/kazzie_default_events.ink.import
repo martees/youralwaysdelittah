@@ -1,0 +1,13 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+path="res://.import/kazzie_default_events.ink-1eb7d19278a0b8483675c93d8b56fe70.res"
+
+[deps]
+
+source_file="res://Story/kazzie/kazzie_default_events.ink"
+dest_files=[ "res://.import/kazzie_default_events.ink-1eb7d19278a0b8483675c93d8b56fe70.res" ]
+
+[params]
+

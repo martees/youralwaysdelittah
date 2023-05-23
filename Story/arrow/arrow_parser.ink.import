@@ -1,0 +1,13 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+path="res://.import/arrow_parser.ink-b30ea870ecc28cf8306008e5cf2e9500.res"
+
+[deps]
+
+source_file="res://Story/arrow/arrow_parser.ink"
+dest_files=[ "res://.import/arrow_parser.ink-b30ea870ecc28cf8306008e5cf2e9500.res" ]
+
+[params]
+

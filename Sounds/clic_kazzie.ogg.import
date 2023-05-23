@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/clic_kazzie.ogg-5463ffc2c8884d5faba94b98f0e74296.oggstr"
+
+[deps]
+
+source_file="res://Sounds/clic_kazzie.ogg"
+dest_files=[ "res://.import/clic_kazzie.ogg-5463ffc2c8884d5faba94b98f0e74296.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Delittah_writting_themselves.ogg-1ec844fcb608a3bd1e6c1c0fdf52f0bc.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Delittah_writting_themselves.ogg"
+dest_files=[ "res://.import/Delittah_writting_themselves.ogg-1ec844fcb608a3bd1e6c1c0fdf52f0bc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

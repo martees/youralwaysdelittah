@@ -1,0 +1,142 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scripts/ingredient_choice.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/letter.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/lettercraft.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Ingredient.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Fonts/AcespriteFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Sprites/bigletter.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/hoverable.gd" type="Script" id=7]
+[ext_resource path="res://Sprites/UI/send_yourself_hl.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/send_yourself.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/lets_eat.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/lets_eat_hl.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/lets_eat_gr.png" type="Texture" id=12]
+[ext_resource path="res://Scripts/letter_by_letter.gd" type="Script" id=13]
+[ext_resource path="res://Sounds/Delittah_writting_themselves.ogg" type="AudioStream" id=15]
+
+[node name="IngredientChoice" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+Ingredients = [ NodePath("Selection/Apple"), NodePath("Selection/Leaf"), NodePath("Selection/Feather") ]
+
+[node name="Selection" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="TextureRect" parent="Selection"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="Letter" type="TextureRect" parent="Selection"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[node name="Apple" parent="Selection" instance=ExtResource( 4 )]
+id = "apple"
+
+[node name="Leaf" parent="Selection" instance=ExtResource( 4 )]
+id = "leaf"
+
+[node name="Feather" parent="Selection" instance=ExtResource( 4 )]
+id = "feather"
+
+[node name="Validate" type="Control" parent="Selection"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+enabled = false
+sound = ExtResource( 15 )
+
+[node name="Image" type="TextureRect" parent="Selection/Validate"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageHL" type="TextureRect" parent="Selection/Validate"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageGR" type="TextureRect" parent="Selection/Validate"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="Tutorial" type="RichTextLabel" parent="Selection"]
+margin_left = 84.0
+margin_top = 93.0
+margin_right = 166.0
+margin_bottom = 228.0
+rect_clip_content = false
+custom_colors/default_color = Color( 0.470588, 0.423529, 0.34902, 1 )
+custom_constants/line_separation = -2
+custom_fonts/normal_font = ExtResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Lorem iprsum dolor sit alid"
+visible_characters = 0
+percent_visible = 0.0
+text = "Lorem iprsum dolor sit alid"
+scroll_active = false
+script = ExtResource( 13 )
+
+[node name="BigLetter" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="TextureRect" parent="BigLetter"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 6
+
+[node name="Validate" type="Control" parent="BigLetter"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="Image" type="TextureRect" parent="BigLetter/Validate"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="ImageHL" type="TextureRect" parent="BigLetter/Validate"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Text" type="RichTextLabel" parent="BigLetter"]
+margin_left = 131.0
+margin_top = 16.0
+margin_right = 355.0
+margin_bottom = 248.0
+rect_clip_content = false
+custom_colors/default_color = Color( 0.470588, 0.423529, 0.34902, 1 )
+custom_fonts/normal_font = ExtResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Lorem iprsum dolor sit alid"
+text = "Lorem iprsum dolor sit alid"
+scroll_active = false
+script = ExtResource( 13 )
